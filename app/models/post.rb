@@ -1,5 +1,16 @@
+# == Schema Information
+#
+# Table name: posts
+#
+#  id         :integer          not null, primary key
+#  title      :string(255)
+#  body       :text
+#  created_at :datetime         not null
+#  updated_at :datetime         not null
+#
+
 class Post < ActiveRecord::Base
   rolify
-  has_and_belongs_to_many :users, :join_table => :users_roles
+  belongs_to :user
   
 end

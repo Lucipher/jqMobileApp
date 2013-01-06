@@ -1,0 +1,14 @@
+<% flash.each do |key, value| %>
+<% if value.is_a?(String) %>
+
+<script text/javascript>
+  $.notifyBar({
+    html: "<%= value %>",
+    delay: 3000,
+    animationSpeed: "normal"
+  });
+</script>
+
+<% end %>    
+<% end %>
+
