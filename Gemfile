@@ -8,7 +8,7 @@ gem 'rails', '3.2.9'
 gem 'sqlite3', :group => [:development, :test]
 gem 'pg', :group => :production
 
-gem 'jquery-rails'
+gem 'jquery-rails', '~> 2.1'
 gem 'devise'
 gem 'cancan'
 gem 'rolify'
